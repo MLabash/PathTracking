@@ -1,6 +1,6 @@
 /*
  1-start and stop tracking
- 2-store current position every 30 seconds using google API 
+ 2-store current position every 10 seconds using google API 
  3-preview the stored positions
  4-delete history of previous stored positions
 */
@@ -16,7 +16,7 @@ var trackingInterval;
 function startTracking() {
     if (trackingMode){
         document.getElementById("start-tracking").textContent = "Stop tracking";
-        trackingInterval = setInterval(getPosition, 30000);
+        trackingInterval = setInterval(getPosition, 10000);
     }
     else{
         document.getElementById("start-tracking").textContent = "Start tracking";
