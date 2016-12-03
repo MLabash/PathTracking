@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Path tracking</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">  
+  </head>
+  <body>
+    <div id="main-div">
+      <h1>Path Tracking</h1>  
+      <div id="map"></div>
+      <div id="buttons-div"> 
+        <button id="start-tracking" onclick="startTracking()">Start tracking</button>
+        <button id="preview-tracking" onclick="previewTracking()">Preview</button>
+        <button id="clear-history" onclick="clearHistory()">Clear history</button>  
+      </div>
+      <div id="preview-table">
+        <table id="track-info-table"></table>
+      </div>
+    </div>       
+    <script src="script.js"></script>
+    <script src="bugFixing.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAntd0GyfYvm_VdAv5vwGi3dxLWpuanT0g&callback=initMap"
+    async defer></script>
+    
+  </body>
+</html>
